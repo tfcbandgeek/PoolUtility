@@ -56,3 +56,12 @@ class Pool<T: PoolObjectInterface>(private var minSize: Int = 10, private var ma
         pool.add(poolObject)
     }
 }
+
+interface PoolObjectInterface {
+    fun getID(): Int
+    fun deconstruct()
+}
+
+interface PoolObjectCreator<T: PoolObjectInterface> {
+    fun generatePoolObject(): T
+}
