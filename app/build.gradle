@@ -6,10 +6,10 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "jgappsandgames.me.poolutility"
-        minSdkVersion 16
+        minSdkVersion 14
         targetSdkVersion 28
-        versionCode 3
-        versionName "1.2.0"
+        versionCode 4
+        versionName "1.2.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
