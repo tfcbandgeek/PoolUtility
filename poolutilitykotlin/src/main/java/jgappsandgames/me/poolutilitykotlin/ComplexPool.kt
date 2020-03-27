@@ -9,7 +9,8 @@ open class ComplexPool<T: ComplexPool.PoolObject>(private val factory: PoolFacto
 
     // Initializer
     init {
-
+        freeObjects.ensureCapacity(start)
+        for (i in 0 until start) freeObjects.add(factory.createObject(i.toLong()))
     }
 
     // Pool Methods

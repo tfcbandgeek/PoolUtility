@@ -1,6 +1,6 @@
 package jgappsandgames.me.poolutilitykotlin
 
-class SimplePool<T>(val factory: PoolFactory<T>, val maxSize: Int = 100) {
+class SimplePool<T>(private val factory: PoolFactory<T>, private val maxSize: Int = 100) {
     // Data
     private val freeObjects = ArrayList<T>()
 
